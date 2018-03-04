@@ -5,32 +5,32 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- Секция Хеддер -->
-      <header class="header">
-        <!-- Навигация  -->
-        <nav class="header__nav-bar">
-          <!-- Логотип -->
-          <a  class="header__logo "href="#">divace</a>
-          <!-- Верхний блок хедера -->
-         <div class="header__blok-one">
+    <!-- Секция Хеддер -->
+    <header class="header">
+      <!-- Навигация  -->
+      <nav class="header__nav-bar">
+        <!-- Логотип -->
+        <a  class="header__logo" href="#">divace</a>
+        <!-- Верхний блок хедера -->
+        <div class="header__blok-one">
           <!-- Формма поиска -->
-           <form class="header__search" action="">
-             <input type="search" name="" value="Поиск">
-             <button type="submit" name="button">поиск</button>
-           </form>
-           <!-- Вход в линый кабинет -->
-           <ul class="header__enter">
-             <li><a href="">Валентин петухов</a></li>
-             <li><a href="">Выйти</a></li>
-           </ul>
-           <!-- Панель сравнить и корзина -->
-           <ul class="header__compar-basket">
-             <li><a href="#">Сравнить</a></li>
-             <li><a href="#">Корзина</a></li>
-           </ul>
-         <!-- Нижний блог -->
-         </div class="header__block-two">
+            <form class="header__search" action="/">
+              <input type="search" name="search" value="Поиск">
+              <button type="submit" name="button">поиск</button>
+            </form>
+            <!-- Вход в линый кабинет -->
+            <ul class="footer__enter">
+              <li><a href="">Валентин петухов</a></li>
+              <li><a href="">Выйти</a></li>
+            </ul>
+            <!-- Панель сравнить и корзина -->
+            <ul class="header__compar-basket">
+              <li><a href="#">Сравнить</a></li>
+              <li><a href="#">Корзина</a></li>
+            </ul>
+        </div>
+        <!-- Нижний блог -->
+        <div class="header__block-two">
           <!-- меню Каталга товаров -->
           <ul class="header__menu">
             <!-- Кнопка вызова каталога -->
@@ -53,115 +53,125 @@
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Конец Секции -->
+    <!--Главная  Секция-->
+    <main class="catalog">
+      <h1 class="catalog__title">html academy - personal project DEVICE</h1>
+      <section class="catalog__main-nav">
+        <h2>Моноподы для селфи</h2>
+        <nav>
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Каталог товаров</a></li>
+            <li><a href="">Моноподы для селфи</a></li>
+          </ul>
         </nav>
-      </header>
-      <!-- Конец Секции -->
-        <main class="catalog">
-          <section class="catalog__main-nav">
-            <h1 class="catalog__title">Моноподы для селфи</h1>
-            <nav>
-              <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">Каталог товаров</a></li>
-                <li><a href="">Моноподы для селфи/a></li>
-              </ul>
-            </nav>
-          </section>
-          <aside class="catalog__aside-form">
-              <h2>фильтр</h2>
-              <!--Формы -->
-            </aside>
-          <article class="catalog__main">
-            <section class="catalog__sort">
-              <h2>Сортировка:</h2>
-              <ul>
-                <li>
-                  <button>По цене</button>
-                </li>
-                <li>
-                  <button>По типу</button>
-                </li>
-                <li>
-                  <button>по популярности</button>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <button>вверх</button>
-                </li>
-                <li>
-                  <button>Вниз</button>
-                </li>
-              </ul>
-            </section>
-            <section class="catalog__list">
-              <h2>список товаров</h2>
-              <a href="">
-                <h3></h3>
-                <img src="" alt="">
-                <span></span>
-              </a>
-              <a href="">
-                <h3></h3>
-                <img src="" alt="">
-                <span></span>
-              </a>
-              <a href="">
-                <h3></h3>
-                <img src="" alt="">
-                <span></span>
-              </a>
-              <a href="">
-                <h3></h3>
-                <img src="" alt="">
-                <span></span>
-              </a>
-            </section>
-            <section class="catalog__nav">
-              <a href="">назад</a>
-              <ul>
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-              </ul>
-              <a href="">вперед</a>
-            </section>
-          </article>
-        </main>
-        <!-- Секция Футер -->
-        <footer class="footer">
-          <div class="footer__block-one">
-            <a class="footer__logo" href="">divice</a>
-            <ul class="footer__enter">
-              <li><a href="">Валентин петухов</a></li>
-              <li><a href="">Выйти</a></li>
+      </section>
+      <aside class="catalog__aside-form">
+        <h2>фильтр</h2>
+        <!--Формы -->
+      </aside>
+      <div class="catalog__main">
+        <section class="catalog__sort">
+          <h2>Сортировка:</h2>
+          <ul>
+            <li>
+              <button>По цене</button>
+            </li>
+            <li>
+              <button>По типу</button>
+            </li>
+            <li>
+              <button>по популярности</button>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <button>вверх</button>
+            </li>
+            <li>
+              <button>Вниз</button>
+            </li>
+          </ul>
+        </section>
+        <section class="catalog__list">
+          <h2>список товаров</h2>
+          <a href="#">
+            <h3>Заголовок</h3>
+            <img src="#" alt="товар1" width="200" height="200">
+            <p></p>
+          </a>
+          <a href="#">
+            <h3>Заголовок</h3>
+            <img src="#" alt="товар1" width="200" height="200">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur reprehenderit numquam doloremque, libero at omnis hic molestiae earum debitis cupiditate eius eum id eligendi, nam aliquam, fugiat porro iste voluptatum.</p>
+          </a>
+          <a href="#">
+            <h3>Заголовок</h3>
+            <img src="#" alt="товар1" width="200" height="200">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laboriosam accusamus quod sed praesentium quis commodi cum officia voluptate eveniet recusandae fugiat voluptatibus harum, excepturi tenetur voluptas odit, doloribus, officiis.</p>
+          </a>
+          <a href="#">
+            <h3>Заголовок</h3>
+            <img src="#" alt="товар1" width="200" height="200">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus velit incidunt quo, tempora sapiente quas odit, perferendis totam reiciendis doloribus, quae at nemo, vero vel ut dolore quasi aspernatur eaque.</p>
+          </a>
+        </section>
+        <section class="catalog__nav">
+          <h2>Навигация каталога</h2>
+          <nav>
+            <a href="#">назад</a>
+            <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
             </ul>
-            <ul class="footer__compar-basket">
-              <li><a href="">Сравнить</a></li>
-              <li><a href="">Корзина</a></li>
-            </ul>
-          </div>
-          <div class="footer__block-two">
-            <span class="footer__adress">г. Москва, ул. Строителей, 15</span>
-            <ul class="footer__services">
-              <li><a href="#">доставка</a></li>
-              <li><a href="#">гарантия</a></li>
-              <li><a href="#">контаты<</a></li>
-            </ul>
-            <span class="footer__tel">Тел.:+7(495)495-95-95</span>
-          </div>
-          <div class="footer__block-three">
-            <ul class="footer__social">
-              <li><a href="#">facebook</a></li>
-              <li><a href="#">instagram</a></li>
-              <li><a href="#">twitter</a><li>
-            </ul>
-            <a class="footer__logo-mini" href="#">
-              <img src="#" alt="logo-mini" width="200" height="200">
-            </a>
-          </div>
-        </footer>
-        <!-- Конец секиции-->
-    </div>
+            <a href="#">вперед</a>
+          </nav>
+        </section>
+      </div>
+    </main>
+    <!-- Конец секиции-->
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer__block-one">
+          <a class="footer__logo" href="">divice</a>
+          <ul class="footer__enter">
+            <li><a href="">Валентин петухов</a></li>
+            <li><a href="">Выйти</a></li>
+          </ul>
+          <ul class="footer__compar-basket">
+            <li><a href="">Сравнить</a></li>
+            <li><a href="">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="footer__block-two">
+          <address class="footer__adress">
+            г. Москва, ул. Строителей, 15
+          </address>
+          <ul class="footer__services">
+            <li><a href="#">доставка</a></li>
+            <li><a href="#">гарантия</a></li>
+            <li><a href="#">контаты</a></li>
+          </ul>
+          <p class="footer__tel">
+            Тел.:+7(495)495-95-95
+          </p>
+        </div>
+        <div class="footer__block-three">
+          <ul class="footer__social">
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">twitter</a><li>
+          </ul>
+          <a class="footer__logo-mini" href="#">
+            <img src="#" alt="logo-mini" width="200" height="200">
+          </a>
+        </div>
+      </footer>
+    <!-- Конец секиции-->
   </body>
 </html>
