@@ -5,58 +5,82 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <!-- Секция Хеддер -->
     <header class="header">
-      <!-- Навигация  -->
-      <nav class="header__nav-bar">
-        <!-- Логотип -->
-        <a  class="header__logo" href="index.html">divace</a>
-        <!-- Верхний блок хедера -->
-        <div class="header__blok-one">
-          <!-- Формма поиска -->
-            <form class="header__search" action="/">
-              <input type="search" name="search" value="Поиск">
-              <button type="submit" name="button">поиск</button>
-            </form>
-            <!-- Вход в линый кабинет -->
-            <ul class="footer__enter">
-              <li><a href="#">Валентин петухов</a></li>
-              <li><a href="#">Выйти</a></li>
-            </ul>
-            <!-- Панель сравнить и корзина -->
-            <ul class="header__compar-basket">
-              <li><a href="#">Сравнить</a></li>
-              <li><a href="#">Корзина</a></li>
-            </ul>
+      <nav class="header__nav">
+        <a class="header__logo" href="index.html">divace</a>
+    
+        <div class="header__block-one">
+    
+          <form class="search" action="/" method="POST">
+            <input class="search__input" type="search" name="search" placeholder="поиск">
+            <button class="serch__btn" type="submit" name="button-search">поиск</button>
+          </form>
+    
+          <ul class="personal-area">
+            <li>
+              <a href="#">Валентин петухов</a>
+            </li>
+            <li>
+              <a href="#">Выйти</a>
+            </li>
+          </ul>
+          <ul class="buy">
+            <li>
+              <a href="#">сравнить</a>
+            </li>
+            <li>
+              <a href="#">корзина</a>
+            </li>
+          </ul>
+    
         </div>
-        <!-- Нижний блог -->
+    
         <div class="header__block-two">
-          <!-- меню Каталга товаров -->
-          <ul class="header__menu">
-            <!-- Кнопка вызова каталога -->
-            <li><a href="divice-catalog.html">Каталог товаров</a></li>
-            <!-- Выплывающие меню -->
+    
+          <ul class="catalog">
+            <li>
+              <a href="index-device.html">Каталог товаров</a>
+            </li>
             <li>
               <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Фитнес-браслет</a></li>
-                <li><a href="#">Квадракоптер</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="#">Фитнес-браслет</a>
+                </li>
+                <li>
+                  <a href="#">Квадракоптер</a>
+                </li>
+                <li>
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
               </ul>
             </li>
           </ul>
-          <!-- Панель Услуги -->
-          <ul class="header__services">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
+    
+          <ul class="services">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
           </ul>
+    
         </div>
+    
       </nav>
     </header>
-    <!-- Конец Секции -->
     <!--Главная  Секция-->
     <main class="catalog">
       <h1 class="catalog__title">html academy - personal project DEVICE</h1>
@@ -72,7 +96,47 @@
       </section>
       <aside class="catalog__aside-form">
         <h2>фильтр</h2>
-        <!--Формы -->
+        <form action="/" method="POST">
+          <div>
+            <h3>Стоимость</h3>
+            <input type="range" min="1" max="5000">
+          </div>
+          <div>
+            <h3>Цвет</h3>
+            <p>
+              <input type="checkbox" id="black" name="black" value="Черный" checked>
+              <label for="black">черный</label>
+            </p>
+            <p>
+              <input type="checkbox" id="white" name="white" value="Белый">  
+              <label for="white">белый</label>
+            </p>
+          <p>
+            <input type="checkbox" id="blue" name="color" value="Синий" checked>
+            <label for="blue">синий</label>
+          </p>
+          <p>
+            <input type="checkbox" id="red" name="color" value="Красный" checked>
+            <label for="red">красный</label>
+          </p> 
+          <p>
+            <input type="checkbox" id="pink" name="color" value="Розовый">
+            <label for="pink">красный</label>
+          </p>
+          </div>
+          <div>
+            <h3>bluetooth</h3>
+            <p>
+              <input type="radio" id="yes" name="yes" value="yes">
+              <label for="yes">есть</label>
+            </p>
+            <p>
+              <input type="radio" id="no" name="no" value="no">
+              <label for="yes">нет</label>
+            </p>
+          </div>
+          <button type="submit">показать</button>
+        </form>
       </aside>
       <div class="catalog__main">
         <section class="catalog__sort">
@@ -102,54 +166,43 @@
           <div>
             <a href="#">
               <h3>Заголовок</h3>
-              <img src="#" alt="товар1" width="200" height="200">
+              <img src="img\item-1.jpg" alt="товар1" width="200" height="200">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, sint, odio. Vel quibusdam ipsa sit maxime ratione, dolorem dicta mollitia, possimus qui ut quidem unde blanditiis consequatur. Reprehenderit voluptatum, aperiam.</p>
             </a>
             <div>
-              <a href="#">в корзину</a>
-              <a href="#">добавить к сравнению</a>
+              <button href="#">в корзину</button>
+              <button href="#">добавить к сравнению</button>
             </div>
           </div>
           <div>
             <a href="#">
               <h3>Заголовок</h3>
-              <img src="#" alt="товар1" width="200" height="200">
+              <img src="img\item-2.jpg" alt="товар1" width="200" height="200">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur reprehenderit numquam doloremque, libero at omnis hic molestiae earum debitis cupiditate eius eum id eligendi, nam aliquam, fugiat porro iste voluptatum.</p>
             </a>
             <div>
-              <a href="#">в корзину</a>
-              <a href="#">добавить к сравнению</a>
+              <button href="#">в корзину</button>
+              <button href="#">добавить к сравнению</button>
             </div>
           </div>
           <a href="#">
             <h3>Заголовок</h3>
-            <img src="#" alt="товар1" width="200" height="200">
+            <img src="img\item-3.jpg" alt="товар1" width="200" height="200">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur reprehenderit numquam doloremque, libero at omnis hic molestiae earum debitis cupiditate eius eum id eligendi, nam aliquam, fugiat porro iste voluptatum.</p>
           </a>
           <div>
-            <a href="#">в корзину</a>
-            <a href="#">добавить к сравнению</a>
+            <button href="#">в корзину</button>
+            <button href="#">добавить к сравнению</button>
           </div>
           <div>
             <a href="#">
               <h3>Заголовок</h3>
-              <img src="#" alt="товар1" width="200" height="200">
+              <img src="img\item-4.jpg" alt="товар1" width="200" height="200">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laboriosam accusamus quod sed praesentium quis commodi cum officia voluptate eveniet recusandae fugiat voluptatibus harum, excepturi tenetur voluptas odit, doloribus, officiis.</p>
             </a>
             <div>
-              <a href="#">в корзину</a>
-              <a href="#">добавить к сравнению</a>
-            </div>
-          </div>
-          <div>
-            <a href="#">
-              <h3>Заголовок</h3>
-              <img src="#" alt="товар1" width="200" height="200">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus velit incidunt quo, tempora sapiente quas odit, perferendis totam reiciendis doloribus, quae at nemo, vero vel ut dolore quasi aspernatur eaque.</p>
-            </a>
-            <div>
-              <a href="#">в корзину</a>
-              <a href="#">добавить к сравнению</a>
+              <button href="#">в корзину</button>
+              <button href="#">добавить к сравнению</button>
             </div>
           </div>
         </section>
@@ -167,44 +220,63 @@
         </section>
       </div>
     </main>
-    <!-- Конец секиции-->
-    <!-- Футер -->
-    <footer class="footer">
+
+      <footer class="footer">
+      
         <div class="footer__block-one">
           <a class="footer__logo" href="#">divice</a>
-          <ul class="footer__enter">
-            <li><a href="#">Валентин петухов</a></li>
-            <li><a href="#">Выйти</a></li>
+          <ul class="personal-area">
+            <li>
+              <a href="#">Валентин петухов</a>
+            </li>
+            <li>
+              <a href="#">Выйти</a>
+            </li>
           </ul>
-          <ul class="footer__compar-basket">
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
+          <ul class="buy">
+            <li>
+              <a href="#">сравнить</a>
+            </li>
+            <li>
+              <a href="#">корзина</a>
+            </li>
           </ul>
         </div>
+      
         <div class="footer__block-two">
-          <address class="footer__adress">
-            г. Москва, ул. Строителей, 15
-          </address>
+          <address class="footer__adress">г. Москва, ул. Строителей, 15</address>
           <ul class="footer__services">
-            <li><a href="#">доставка</a></li>
-            <li><a href="#">гарантия</a></li>
-            <li><a href="#">контаты</a></li>
+            <li>
+              <a href="#">доставка</a>
+            </li>
+            <li>
+              <a href="#">гарантия</a>
+            </li>
+            <li>
+              <a href="#">контаты</a>
+            </li>
           </ul>
-          <p class="footer__tel">
-            Тел.:+7(495)495-95-95
-          </p>
+          <p class="footer__tel">Тел.:+7(495)495-95-95</p>
         </div>
+      
         <div class="footer__block-three">
           <ul class="footer__social">
-            <li><a href="#">facebook</a></li>
-            <li><a href="#">instagram</a></li>
-            <li><a href="#">twitter</a><li>
+            <li>
+              <a href="#">facebook</a>
+            </li>
+            <li>
+              <a href="#">instagram</a>
+            </li>
+            <li>
+              <a href="#">twitter</a>
+              <li>
           </ul>
           <a class="footer__logo-mini" href="#">
             <img src="#" alt="logo-mini" width="200" height="200">
           </a>
         </div>
+      
       </footer>
-    <!-- Конец секиции-->
+
   </body>
 </html>
